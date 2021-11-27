@@ -17,19 +17,20 @@
      <h1>Lunch Checker</h1>
 
          <div class="form-group">
-             <input id="lunch-menu" type="text"
+             <input type="text"
              placeholder="list comma separated dishes you usually have for lunch"
              class="form-control" ng-model="menu">
          </div>
          <div font>
-            <b>Note : Empty Item is not Counted</b>
+            <b >Note : Empty Item is not Counted</b>
          </div>
          <div class="form-group">
              <button ng-click="check()" class="btn btn-primary">Check If Too Much</button>
          </div>
-         <div class="form-group message">
-           {{result}}
-         </div>
+
+         <button class="btn btn-{{state}}">
+          {{result}}
+         </button>
    </div>
 
 </body>
